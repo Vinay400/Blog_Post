@@ -580,26 +580,23 @@ button:hover {
     text-align: center;
   }
 }
-.contact-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Full screen height */
-}
-
-.contact-form-container {
-  width: 100%;
-  max-width: 800px;
+.contact-section {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 20px;
   text-align: center;
-  font-family: 'Georgia', serif;
-  padding: 20px;
+  font-family: 'Playfair Display', serif;
 }
 
-.contact-form-container h1 {
+.arrow-up {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-heading {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 40px;
-  letter-spacing: 2px;
 }
 
 .contact-form {
@@ -611,43 +608,103 @@ button:hover {
 .form-row {
   display: flex;
   gap: 20px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   flex: 1;
+  min-width: 200px;
+}
+
+label {
+  margin-bottom: 8px;
   text-align: left;
+  font-size: 14px;
 }
 
 input,
 textarea {
-  padding: 10px;
   border: none;
   border-bottom: 2px solid black;
-  font-size: 16px;
+  padding: 10px;
   font-family: inherit;
+  font-size: 14px;
   outline: none;
-  background: transparent;
 }
 
-.full-width {
-  width: 100%;
-}
-
-button {
-  margin-top: 20px;
-  padding: 12px 30px;
-  background-color: #8000ff;
+.submit-btn {
+  width: 120px;
+  margin: 20px auto 0;
+  background-color: purple;
   color: white;
   border: none;
-  font-size: 16px;
-  font-weight: 600;
+  padding: 12px 0;
+  font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s;
+  border-radius: 3px;
+}
+@media (max-width: 1024px) {
+  .main-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .section-heading {
+    text-align: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
 }
 
-button:hover {
-  background-color: #5e00c4;
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 40px 15px;
+  }
+
+  .contact-heading {
+    font-size: 1.75rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-form {
+    padding: 0 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-heading {
+    font-size: 1.5rem;
+  }
+
+  .arrow-up {
+    font-size: 2rem;
+  }
+
+  input,
+  textarea {
+    font-size: 13px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+  }
 }

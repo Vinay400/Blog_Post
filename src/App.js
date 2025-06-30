@@ -1,5 +1,5 @@
 import { dividerClasses } from '@mui/material/Divider';
-import './App.css';
+import './styles/App.css';
 import Homepage from './homepage';
 import ContactForm from './components/Contact/ContactForm';
 function App() {

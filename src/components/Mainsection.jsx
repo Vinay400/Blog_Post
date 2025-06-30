@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css'; // Make sure the grid styles are defined here
+import '../styles/App.css'; 
 import HorizontalCard from './posts/HorizontalCard';
 import AboutMe from './About Me/Aboutme';
 import FollowMe from './About Me/Followme';
@@ -68,9 +68,7 @@ function Mainsection() {
           description="My PICK"
         />
       </div>
-
     </div>
-    
   );
 }
 

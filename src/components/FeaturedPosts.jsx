@@ -1,5 +1,6 @@
 import { Margin } from '@mui/icons-material';
 import React from 'react';
+import '../styles/App.css';
 function FeaturedPosts(){
     return(
         <div className='Featured-card'>

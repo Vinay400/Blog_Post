@@ -1,5 +1,6 @@
 import React from "react";
 import Subscribe from "./About Me/subscribe";
+import '../styles/App.css';
 function Emailsection(){
     return (
     <div className="Email-Section">
