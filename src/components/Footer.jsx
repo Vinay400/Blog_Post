@@ -1,6 +1,6 @@
 import React from "react";
 
-const ContactForm = () => {
+const Footer = () => {
   return (
     <>
       {/* Scroll Target for Arrow */}
@@ -47,4 +47,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default Footer;

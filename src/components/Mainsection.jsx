@@ -4,7 +4,7 @@ import HorizontalCard from './posts/HorizontalCard';
 import AboutMe from './About Me/Aboutme';
 import FollowMe from './About Me/Followme';
 import Subscribe from './About Me/subscribe';
-import ContactForm from './Contact/ContactForm';
+import ContactForm from './Footer';
 function Mainsection() {
   return (
     <div className="main-grid">
