@@ -1,4 +1,5 @@
 import React from 'react';
+import "../../styles/HorizontalCard.css";
 
 const HorizontalCard = ({
   date,

@@ -1,0 +1,37 @@
+.followme h3{
+  text-align: center;
+}
+.follow-me-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.follow-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.follow-icons a {
+  margin: 0 10px;
+  color: #000;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.follow-icons a:hover {
+  color: #6c63ff;
+}
+
+.followme{
+  padding-bottom: 70px;
+}
+
+.mypickimage{
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+} 

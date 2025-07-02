@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/App.css'; 
+import '../styles/Mainsection.css';
 import HorizontalCard from './posts/HorizontalCard';
 import AboutMe from './About Me/Aboutme';
 import FollowMe from './About Me/Followme';
@@ -50,7 +51,7 @@ function Mainsection() {
         <h3 className="section-heading">ABOUT ME</h3>
         <AboutMe
           imageUrl="https://randompicturegenerator.com/img/picture-generator/53e4d5424854a914f1dc8460962e33791c3ad6e04e507440702e7bd59e48c5_640.jpg"
-          description="I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you."
+          description="I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click 'Edit Text' or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
           readMoreText=""
         />
         <hr className="custom-divider" />

@@ -6,6 +6,7 @@ import {
   faTwitter,
   faPinterestP
 } from '@fortawesome/free-brands-svg-icons';
+import "../../styles/Followme.css";
 
 const FollowMe = () => {
   return (

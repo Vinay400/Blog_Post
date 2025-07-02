@@ -1,0 +1,101 @@
+.about-me-section {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0;
+  padding: 32px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.about-me-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  color: #111827;
+  text-align: center;
+  margin: 0 0 32px 0;
+  text-transform: uppercase;
+}
+
+.about-me-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.about-me-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.about-me-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-me-text {
+  text-align: center;
+}
+
+.about-me-description {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #374151;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+.read-more-link {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  color: #111827;
+  text-decoration: none;
+  font-weight: 400;
+  display: inline-block;
+  transition: color 0.2s ease;
+}
+
+.read-more-link:hover {
+  color: #3b82f6;
+}
+
+@media (max-width: 768px) {
+  .about-me-section {
+    padding: 24px;
+    max-width: 100%;
+  }
+  .about-me-image {
+    width: 160px;
+    height: 160px;
+  }
+  .about-me-title {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me-section {
+    padding: 20px;
+  }
+  .about-me-content {
+    gap: 20px;
+  }
+  .about-me-image {
+    width: 140px;
+    height: 140px;
+  }
+} 

@@ -1,4 +1,6 @@
 import React from "react"
+import "../../styles/Subscribe.css";
+
 function Subscribe(){
     return(
 <div className="email">

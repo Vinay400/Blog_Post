@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Footer.css";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
 
       <div className="contact-section">
         {/* Upward Arrow */}
-        <a href="#top" className="arrow-up" aria-label="Scroll to top">↑</a>
+        <a href="#top" id="footer" className="arrow-up" aria-label="Scroll to top">↑</a>
 
         {/* Heading */}
         <h2 className="contact-heading">
