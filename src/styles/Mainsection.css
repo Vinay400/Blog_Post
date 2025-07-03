@@ -17,7 +17,6 @@
 .right-section {
   display: flex;
   flex-direction: column;
-  padding-left: 40px;
 }
 
 .section-heading {
@@ -47,5 +46,26 @@
   }
   .section-heading {
     text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .left-section hr,
+  .main-grid hr,
+  hr.custom-divider {
+    display: none !important;
+    border: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .main-grid > .left-section {
+    border-right: none !important;
+    padding-right: 0 !important;
+  }
+  .main-grid::before,
+  .main-grid::after {
+    display: none !important;
+    border: none !important;
   }
 } 

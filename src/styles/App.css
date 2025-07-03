@@ -12,3 +12,23 @@ hr {
 body, p {
   font-family: 'Lato', sans-serif;
 }
+
+@media (max-width: 600px) {
+  html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  .container, .Homepage {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 1rem !important;
+    border-radius: 0 !important;
+    box-sizing: border-box;
+  }
+  .main-grid, .left-section, .right-section, .about-me-content {
+    text-align: left !important;
+  }
+}

@@ -8,6 +8,8 @@ import Mainsection from './components/Mainsection';
 import ContactForm from './components/Footer';
 import AboutMe from './components/About Me/Aboutme';
 import ProfileCard from './components/ProfileCard';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import PostPage from './components/posts/PostPage';
 
 function App() {
   const [activePage, setActivePage] = React.useState('Home');
@@ -53,14 +55,19 @@ function App() {
   }
 
   return (
-    <div>
-      <div className="Homepage">
-        <div className="container">
-          <Navbar onChecked={handleClick} />
-          {content}
+    <Router>
+      <div>
+        <div className="Homepage">
+          <div className="container">
+            <Navbar onChecked={handleClick} />
+            <Routes>
+              <Route path="/" element={content} />
+              <Route path="/post/:id" element={<PostPage />} />
+            </Routes>
+          </div>
         </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

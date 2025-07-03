@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import "../../styles/HorizontalCard.css";
 
 const HorizontalCard = ({
+  id,
   date,
   readTime,
   title,
@@ -11,8 +13,9 @@ const HorizontalCard = ({
   comments,
   likes,
 }) => {
+  const navigate = useNavigate();
   return (
-    <div className="blog-card">
+    <div className="blog-card" onClick={() => navigate(`/post/${id}`)} style={{cursor: 'pointer'}}>
       <div className="blog-card-image">
         <img src={imageUrl} alt={title} />
       </div>

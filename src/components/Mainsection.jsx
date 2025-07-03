@@ -14,34 +14,37 @@ function Mainsection() {
         <h3 className="section-heading">TRAIN OF THOUGHT</h3>
         <div className="space-y-6">
           <HorizontalCard
-            date="Mar 23, 2023"
-            readTime="1 min read"
-            title="Do Not Leave Tokyo Before Eating This Ramen"
-            description="Create a blog post subtitle that summarizes your post in a few short, punchy sentences and..."
-            imageUrl="https://images.pexels.com/photos/884600/pexels-photo-884600.jpeg?auto=compress&cs=tinysrgb&w=400"
-            views={0}
-            comments={0}
-            likes={8}
-          />
-          <HorizontalCard
-            date="Mar 20, 2023"
-            readTime="3 min read"
-            title="The Ultimate Guide to Street Food in Bangkok"
-            description="Discover the most authentic street food experiences in Thailand's vibrant capital city..."
-            imageUrl="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400"
-            views={24}
-            comments={5}
-            likes={15}
-          />
-          <HorizontalCard
-            date="Mar 18, 2023"
+            id="vscode-extensions"
+            date="Apr 8, 2024"
             readTime="2 min read"
-            title="Hidden Coffee Shops in Seoul You Must Visit"
-            description="From traditional Korean tea houses to modern specialty coffee roasters, explore Seoul's unique cafe culture..."
-            imageUrl="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=400"
-            views={12}
-            comments={3}
-            likes={22}
+            title="10 VS Code Extensions Every Web Developer Should Use"
+            description="Boost your productivity and streamline your workflow with these must-have Visual Studio Code extensions for web development."
+            imageUrl="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=400"
+            views={42}
+            comments={7}
+            likes={25}
+          />
+          <HorizontalCard
+            id="js-closures"
+            date="Apr 5, 2024"
+            readTime="3 min read"
+            title="Understanding JavaScript Closures with Real-World Examples"
+            description="Demystify closures in JavaScript with clear explanations and practical coding scenarios you can use in your projects."
+            imageUrl="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=400"
+            views={30}
+            comments={4}
+            likes={19}
+          />
+          <HorizontalCard
+            id="css-grid-flexbox"
+            date="Apr 2, 2024"
+            readTime="2 min read"
+            title="How to Build Responsive Layouts with CSS Grid and Flexbox"
+            description="Learn the secrets to creating beautiful, responsive web layouts using modern CSS techniques like Grid and Flexbox."
+            imageUrl="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400"
+            views={18}
+            comments={2}
+            likes={14}
           />
         </div>
       </div>
