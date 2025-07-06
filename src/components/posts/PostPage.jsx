@@ -101,7 +101,6 @@ const PostPage = () => {
               marginBottom: '0.2rem',
               cursor: 'pointer',
               border: selectedTag === tag ? '1px solid #6c63ff' : 'none',
-              color: selectedTag === tag ? '#6c63ff' : '#333',
               fontWeight: selectedTag === tag ? 'bold' : 'normal',
             }}
             onClick={() => setSelectedTag(tag)}

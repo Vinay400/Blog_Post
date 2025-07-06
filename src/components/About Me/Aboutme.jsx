@@ -16,7 +16,7 @@ const AboutMe = ({
           <p className="about-description">
             I'm a passionate web developer sharing coding tutorials, project ideas, and the latest trends in web technologies. Join me as I explore the world of JavaScript, React, CSS, and more!
           </p>
-          <a href="#" className="read-more-link">{readMoreText}</a>
+          <button type="button" className="read-more-link">{readMoreText}</button>
         </div>
       </div>
   );

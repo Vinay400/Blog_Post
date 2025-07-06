@@ -5,10 +5,10 @@ import Navbar from './components/Navbar';
 import Emailsection from './components/emailsection';
 import Mainsection from './components/Mainsection';
 import ContactForm from './components/Footer';
-import AboutMe from './components/About Me/Aboutme';
 import ProfileCard from './components/ProfileCard';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PostPage from './components/posts/PostPage';
+import FloatingSocialButton from './components/FloatingSocialButton';
 
 function AboutPage() {
   return (
@@ -62,6 +62,7 @@ function App() {
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/post/:id" element={<PostPage />} />
             </Routes>
+            <FloatingSocialButton />
           </div>
         </div>
       </div>

@@ -1,4 +1,3 @@
-import { Margin } from '@mui/icons-material';
 import React from 'react';
 import "../styles/FeaturedPosts.css";
 import '../styles/App.css';

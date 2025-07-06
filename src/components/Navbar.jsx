@@ -113,12 +113,7 @@ function Navbar() {
           </li>
         </ul>
         <div className="navbar-right">
-          <ul className="navbar-social">
-            <li><a href="#"><FontAwesomeIcon icon={faFacebookF} /></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faInstagram} /></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faTwitter} /></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faPinterestP} /></a></li>
-          </ul>
+          {/* Social icons removed for floating button */}
         </div>
       </nav>
       <hr className="navbar-divider"/>
