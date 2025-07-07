@@ -1,40 +1,74 @@
 .main-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 40px;
+  display: flex;
+  gap: 2.5rem;
+  margin: 2.5rem auto;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  padding: 0 2rem;
 }
 
 .left-section {
+  flex: 2;
   display: flex;
   flex-direction: column;
-  padding-right: 40px;
-  border-right: 1px solid #ccc;
+  gap: 2.2rem;
 }
 
 .right-section {
-  display: flex;
-  flex-direction: column;
+  flex: 1;
+  background: var(--color-card);
+  border-radius: 16px;
+  box-shadow: 0 2px 16px 0 rgba(30,41,59,0.07);
+  padding: 2rem 1.5rem;
+  min-width: 320px;
+  max-width: 400px;
+  margin-top: 0.5rem;
 }
 
 .section-heading {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 3px;
-  margin-bottom: 30px;
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1.5px;
 }
 
 .custom-divider {
   border: none;
-  height: 1px;
-  background-color: #ccc;
-  margin: 40px 0;
-  width: 60%;
-  margin: 2rem auto;
-  border-top: 1px solid #999;
+  border-top: 1.5px solid var(--color-border);
+  margin: 1.5rem 0;
+}
+
+/* Fade-in animation for cards */
+.space-y-6 > * {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: fadeInUp 0.7s ease forwards;
+}
+.space-y-6 > *:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.space-y-6 > *:nth-child(3) {
+  animation-delay: 0.3s;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-grid {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 0 0.5rem;
+  }
+  .right-section {
+    min-width: 0;
+    max-width: 100vw;
+    margin-top: 2rem;
+    padding: 1.2rem 0.7rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {

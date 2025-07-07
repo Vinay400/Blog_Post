@@ -1,3 +1,5 @@
+/* Reverting to the original Navbar styles before the visual overhaul */
+
 .navbar-outer {
   width: 100%;
   background: #fff;
@@ -87,6 +89,7 @@
   font-size: 1.1rem;
   font-family: 'Lato', sans-serif;
   transition: background 0.2s, color 0.2s;
+  height: 100%;
 }
 .button > a:hover, .button > a:focus {
   background: #f7f7f7;
@@ -126,6 +129,7 @@
   background: #f7f7f7;
   border-color: #6c63ff;
 }
+
 .search-container {
   display: flex;
   align-items: center;
@@ -344,7 +348,7 @@
   .buttons .button:last-child, .search-button {
     border-bottom: 1px solid #e5e7eb;
   }
-  .button > a {
+  .buttons .button > a {
     padding: 10px 0 10px 10px;
     font-size: 1rem;
     text-align: left;
@@ -463,20 +467,4 @@
 .dropdown-menu li a:hover {
   background: #f0f4fa;
   color: #007bff;
-}
-
-@media (max-width: 600px) {
-  .dropdown-menu {
-    min-width: 140px;
-    font-size: 0.95rem;
-    left: 0;
-    right: auto;
-  }
-  .dropdown-label {
-    padding: 0.7rem 0.7rem;
-    font-size: 1rem;
-  }
-  .dropdown-menu li a {
-    padding: 0.6rem 0.7rem;
-  }
 } 

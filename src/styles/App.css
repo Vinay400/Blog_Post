@@ -1,16 +1,49 @@
-html{
-  scroll-behavior:smooth;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+  --color-bg: #f8fafc;
+  --color-primary: #2563eb;
+  --color-secondary: #f472b6;
+  --color-accent: #fbbf24;
+  --color-text: #1e293b;
+  --color-card: #fff;
+  --color-border: #e5e7eb;
 }
+
+html {
+  scroll-behavior: smooth;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
-  letter-spacing: 8px;
+  letter-spacing: 2px;
+  color: var(--color-primary);
+  font-weight: 700;
 }
+
+body, p {
+  font-family: 'Inter', 'Lato', sans-serif;
+  color: var(--color-text);
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--color-secondary);
+}
+
 hr {
   width: 900px;
   margin: 60px auto;
-}
-body, p {
-  font-family: 'Lato', sans-serif;
+  border: none;
+  border-top: 1.5px solid var(--color-border);
 }
 
 @media (max-width: 600px) {

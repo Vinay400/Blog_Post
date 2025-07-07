@@ -49,4 +49,52 @@
     font-size: 1rem;
     padding: 8px 12px;
   }
+}
+
+.email-section {
+  background: var(--color-card);
+  border-radius: 16px;
+  box-shadow: 0 2px 16px 0 rgba(30,41,59,0.07);
+  border: 1.5px solid var(--color-border);
+  padding: 1.5rem 1.2rem;
+  margin: 1.2rem auto;
+  text-align: center;
+  font-family: 'Inter', 'Lato', sans-serif;
+  font-size: 1.08rem;
+  opacity: 0;
+  animation: fadeInEmail 0.8s 0.2s forwards;
+}
+@keyframes fadeInEmail {
+  to {
+    opacity: 1;
+  }
+}
+
+.email-input {
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--color-border);
+  font-size: 1.08rem;
+  margin-right: 0.7rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.email-input:focus {
+  border-color: var(--color-primary);
+}
+
+.email-btn {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.email-btn:hover {
+  background: var(--color-accent);
+  transform: scale(1.08);
 } 

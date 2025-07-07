@@ -21,18 +21,34 @@
 }
 
 .about-me-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
+  background: var(--color-card);
+  border-radius: 16px;
+  box-shadow: 0 2px 16px 0 rgba(30,41,59,0.07);
+  border: 1.5px solid var(--color-border);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  margin: 2rem auto 1.5rem auto;
+  max-width: 400px;
+  text-align: center;
+  font-family: 'Inter', 'Lato', sans-serif;
+  font-size: 1.08rem;
+  opacity: 0;
+  animation: fadeInAbout 0.8s 0.2s forwards;
+}
+
+@keyframes fadeInAbout {
+  to {
+    opacity: 1;
+  }
 }
 
 .about-me-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 0;
-  overflow: hidden;
-  border: 1px solid #e5e7eb;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+  border: 3px solid var(--color-secondary);
+  box-shadow: 0 2px 8px 0 rgba(244,114,182,0.10);
 }
 
 .about-me-image img {
@@ -47,43 +63,49 @@
 }
 
 .about-me-description {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-size: 17px;
-  line-height: 1.6;
-  color: #374151;
-  margin: 0 0 20px 0;
-  text-align: left;
+  color: var(--color-text);
+  font-size: 1.05rem;
+  margin-bottom: 0.7rem;
 }
 
 .read-more-link {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-size: 14px;
-  color: #111827;
-  text-decoration: none;
-  font-weight: 400;
+  font-family: 'Inter', 'Lato', sans-serif;
+  font-size: 1.05rem;
+  color: #1a1010;
+  background: var(--color-primary, #2563eb);
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  margin-top: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px 0 rgba(37,99,235,0.10);
+  cursor: pointer;
+  transition: background 0.18s, transform 0.18s, box-shadow 0.18s;
   display: inline-block;
-  transition: color 0.2s ease;
+  outline: none;
 }
 
-.read-more-link:hover {
-  color: #3b82f6;
+.read-more-link:hover, .read-more-link:focus {
+  background: var(--color-accent, #fbbf24);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px 0 rgba(251,191,36,0.13);
 }
 
-@media (max-width: 768px) {
-  .about-me-section {
-    padding: 24px;
-    max-width: 100%;
+.read-more-link:active {
+  background: var(--color-secondary, #f472b6);
+  color: #fff;
+  transform: scale(0.98);
+}
+
+@media (max-width: 700px) {
+  .about-me-content {
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    max-width: 98vw;
   }
   .about-me-image {
-    width: 160px;
-    height: 160px;
-  }
-  .about-me-title {
-    font-size: 12px;
-    letter-spacing: 3px;
-    margin-bottom: 24px;
+    width: 80px;
+    height: 80px;
   }
 }
 
